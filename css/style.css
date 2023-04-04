@@ -23,7 +23,7 @@ and (max-width: 1199px) {
     width: auto;
     background-image: url(../images/Rizdvo_Christmas_in_Ukraine.jpg);
     background-repeat:no-repeat;
-    background-size:contain;
+    background-size:cover;
     background-color: #5577f3;  
   }
 }
