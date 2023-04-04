@@ -8,18 +8,12 @@ const refs = {
     startBtn: document.getElementById("startBtn"),
 };
 
-
-
-
-
 // 2) Створюємо дату наступного Нового Року до якого будемо рахувати час.
 const countDownDate = new Date(`Jan 1, ${new Date().getFullYear() +1}`);
 
 // вішаємо слухача подій на кнопку STOP
 refs.stopBtn.addEventListener('click', stopTimer);
 refs.startBtn.addEventListener('click', startTimer);
-
-
 
 // 7) запустити сет таймаут, який буде оновлювати час кожну секунду.
 let timerId = setInterval(countDownTimeToNY, 1000);
@@ -51,7 +45,7 @@ function stopTimer () {
 
 // Функція яка відновлює роюоту таймера
 function startTimer() {
-    console.log("start");
+    timerId = setInterval(countDownTimeToNY, 1000);
     refs.stopBtn.disabled = false;
     refs.startBtn.disabled = true;
 }
